@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Background Color switcher</title>
+            <style>
+                body{
+                    margin: 0px;
+                    padding: 20px 30px;
+                }
+                h1{ text-align: center;
+                    text-decoration: underline;
+
+                }
+                
+                    p{font-size: 15px;
+                        text-align: justify;
+
+                    }
+                    .btn{height: 18px;
+                        width: 18px;
+                        display: inline-block;
+                        border-radius: 50%;
+                        border: 2pX solid; 
+                        cursor: pointer;
+                    }
+                        #white{
+                            background-color:#ebe7e6;
+                            
+                        }
+                        #aqua{
+                            background-color: #32a852
+                        }
+                        #orange{
+                            background-color:#e0240b;
+                           
+                        }
+                        #black{
+                            background-color:#141313;
+                        
+                        }
+                    
+                    #color-switcher{text-align: right;}
+                    
+            </style>
+        </head>
+        <body>
+            <h1 class="text"> About Us</h1>
+            <div id="color-switcher">
+                <span class="btn" id="white" onclick="changeBG('#ebe7e6')"></span>
+                <span class="btn" id="aqua" onclick="changeBG('#32a852')"></span>
+                <span class="btn" id="orange" onclick="changeBG('#e0240b')"></span>
+                <span class="btn" id="black" onclick="changeBG('#141313')"></span>
+            </div>
+            <img src="https://assets.newatlas.com/dims4/default/74c0f0e/2147483647/strip/true/crop/2000x1333+0+0/resize/1440x960!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Fef%2Fe6%2F73fef15a43e38ed11e20af5cf62e%2Fdepositphotos-11882201-l-2015.jpg" alt="Network problem" style="height: 800px;" style="width: 100%;">
+            <p class="text">
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum tempore iste libero excepturi sed blanditiis hic doloribus molestiae minus explicabo consequatur, odio officiis nemo. Voluptatibus fugit voluptates, eum eos suscipit assumenda quasi distinctio ut sunt quibusdam, esse facilis soluta veritatis eligendi recusandae dolor alias aliquam saepe earum ea. Recusandae consequatur autem at dolores nemo eius saepe sunt veniam dicta qui! Quae autem, quisquam distinctio assumenda ipsum, consectetur veritatis qui quas fugit sit magni voluptatum sequi repudiandae adipisci est. Hic consequatur dolorem quasi dignissimos illum corrupti expedita veniam quibusdam fugiat fuga ullam quaerat eveniet voluptate quia nulla, animi inventore dicta officiis sunt possimus accusamus. Incidunt beatae odit, blanditiis dolor itaque explicabo est iste illo dolorem qui modi nemo debitis saepe accusantium eos officia, natus veritatis obcaecati magnam nobis esse quaerat vitae eveniet nulla? Laboriosam perferendis facere alias et laudantium, eos explicabo molestiae repudiandae aliquid ducimus veniam adipisci quae est aliquam. Distinctio sint magnam ex atque deserunt pariatur consectetur! Voluptatum cum dicta excepturi inventore distinctio asperiores quia adipisci velit odit earum quos eos iure veritatis, facilis reiciendis, tempora voluptatibus atque, aliquam et officiis delectus nisi nesciunt. Ratione repellendus consectetur eos, id sapiente temporibus voluptate dolorum amet rem pariatur cum saepe delectus veritatis commodi iusto rerum perspiciatis dolores doloremque asperiores, aspernatur corporis fugiat excepturi sit. Eveniet itaque nobis facilis voluptas impedit dignissimos nesciunt nam qui, accusamus architecto praesentium assumenda dicta adipisci quidem explicabo velit ab! Asperiores id eaque harum? Tempore consequuntur exercitationem neque labore ex molestias quisquam nulla accusamus corporis ipsam impedit maxime, illo cum nemo provident hic quis blanditiis magni aspernatur nobis optio, odit numquam. Nobis ea pariatur dolorum vero quia distinctio, similique consequuntur quis, molestiae esse expedita. Quae nobis eaque labore accusantium delectus quibusdam, quas, molestiae alias laboriosam voluptates, iure animi perspiciatis voluptate! At facere consectetur qui cum dolor iste nihil accusamus culpa voluptate blanditiis temporibus minus expedita, iure placeat molestiae hic rerum cumque doloremque laborum earum, suscipit vel beatae porro? Recusandae excepturi veritatis ex sit, repellendus aspernatur! Laborum quibusdam, omnis neque explicabo amet aspernatur. Ut blanditiis voluptas eum molestiae, minima eius earum quas laborum ducimus nemo! Ut veniam distinctio dolorem? Vero quidem unde possimus molestias delectus aut labore perferendis inventore debitis consequatur recusandae dolores nesciunt beatae corrupti blanditiis, amet nostrum iure facere repellendus fuga! Officiis expedita earum nisi vero laudantium fugit quasi quibusdam optio rem doloribus architecto aperiam rerum at cupiditate dignissimos repellendus deleniti, perspiciatis cumque, eos obcaecati saepe omnis praesentium provident. Porro nobis dolore facere explicabo corrupti consequuntur aliquid accusamus atque quia possimus vero reiciendis aperiam, placeat quis suscipit nihil a aliquam illum ea? Praesentium repellat ipsum rem in commodi quia eveniet reprehenderit eligendi id tempora voluptatibus architecto reiciendis, dicta similique molestias vitae voluptate iusto ut dolore cupiditate voluptatem veritatis laborum quidem ea! Illum aspernatur deserunt eaque iste fugiat provident. Nihil ut quia sunt porro consequatur fugit facere dolorum optio beatae, obcaecati numquam voluptate quas ullam voluptatem fuga libero ea nobis totam doloribus dolores. Libero, velit repellat doloremque, a perferendis soluta praesentium dicta, esse hic aperiam unde minima beatae!
+
+            </p>
+            <script>
+                function changeBG(color){
+                    document.body.style.backgroundColor = color;
+                    let txt = document.getElementsByClassName("text")
+                    if(color == '#141313') {
+                        for (let elm of txt){
+                            elm.style.color = "white";
+                        }
+                    }
+                    else {for(let elm of txt){
+                            elm.style.color = "black";
+                        }}
+                }
+            </script>
+
+        </body>
+</html>
